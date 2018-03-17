@@ -35,9 +35,9 @@
 
 .main-menu ul li { 
 	list-style: none;
-	padding-left: 15px;
-    padding-right: 15px;
-	font-size: 14px;
+	padding-left: 21px;
+    padding-right: 21px;
+	font-size: 16px;
     font-weight: bold;
     color: #777;
     font-family: 'Muli', sans-serif;
@@ -55,7 +55,7 @@
 	text-decoration: none;
 }
 
-.main-menu ul li span {
+.main-menu ul li span  {
 	position: absolute;
 	margin-top: -15px;
     background: #fc2a2e;
@@ -64,4 +64,45 @@
     padding-right: 4px;
     font-size: 9px;
     font-weight: bold;
+}
+
+.icons {
+	padding-right: 58px;
+    margin-left: auto;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons ul li i {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+   }
+
+.icons ul{
+	display: flex;
+	flex-direction: row; 
+}
+
+.icons ul li i  {
+	font-weight: bold;
+    color: #fe5a1a;
+}
+
+.icons ul li {
+	list-style: none;
+}
+
+.icons ul li a {
+	text-decoration: none;
 }
