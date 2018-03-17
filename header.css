@@ -1,0 +1,14 @@
+body {
+    overflow-x: hidden;
+}
+
+.main-header {
+    height: 80vh;
+    width: 100vw; 
+}
+
+.main-header img {
+    height: auto;
+    width: 100%;
+    position: absolute;
+}

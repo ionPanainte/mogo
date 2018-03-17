@@ -13,7 +13,6 @@
 .logo {
 	background-color: #fe5a1a;
 	width: 250px;
-	height: 70px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,9 +34,10 @@
 
 .main-menu ul li { 
 	list-style: none;
-	padding-left: 21px;
-    padding-right: 21px;
-	font-size: 16px;
+	padding-left: 15px;
+    padding-right: 15px;
+	font-size: 14px;
+	letter-spacing: .7px;
     font-weight: bold;
     color: #777;
     font-family: 'Muli', sans-serif;
@@ -45,8 +45,23 @@
     display: flex;
     align-items: center;
 }
+.main-menu ul li i {
+	font-weight: bold;
+}
 
-.main-menu ul li:nth-child(6) {
+/*Codul de jos a incetat sa functioneze pentru ca noi a schimbat structura fisierului HTML
+inainte era: 
+	div
+		ul
+			li
+ acum e:
+	div
+		ul
+			li
+				a
+*/
+
+.main-menu ul li:nth-child(6) a {
 	color: #fe5a1a;
 }
 
@@ -75,21 +90,23 @@
 }
 
 .icons ul li i {
-    padding-bottom: 0px;
-    padding-top: 0px;
+	/*Codu ista nu face nimic */
+	/* padding-bottom: 0px;
+    padding-top: 0px; */
     padding-left: 18px;
     padding-right: 18px;
     font-size: 20px;
     height: 100%;
     display: flex;
-    align-items: center;
-    margin-top: 0px;
+	align-items: center;
+	/*Codu ista nu face nimic */
+    /* margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 0px; */
    }
 
-.icons ul{
+.icons ul {
 	display: flex;
 	flex-direction: row; 
 }
@@ -106,3 +123,49 @@
 .icons ul li a {
 	text-decoration: none;
 }
+
+/* In 'best practices in css' se recomanda sa ordonezi clasele in descrestere,
+de exemplu:
+
+.icons {
+	padding-right: 58px;
+    margin-left: auto;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons ul {
+	display: flex;
+	flex-direction: row; 
+}
+
+.icons ul li {
+	list-style: none;
+}
+
+.icons ul li a {
+	text-decoration: none;
+}
+
+Clasele de mai jos sunt aceleasi, 
+trebuie sa faci din doua una.
+
+.icons ul li i {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+	align-items: center;
+   }
+
+.icons ul li i  {
+	font-weight: bold;
+    color: #fe5a1a;
+} */
+
+/* icoanele nu sunt pe aceeasi linie cu textul meniul
+indiciu foloseste padding sau margin */
+
+/* Te las sa gasesti cum sa schimbi culoarea la ultima icoana */
