@@ -1,4 +1,4 @@
-* {
+ * {
 	margin: 0;
 	padding: 0;
 }
@@ -49,18 +49,6 @@
 	font-weight: bold;
 }
 
-/*Codul de jos a incetat sa functioneze pentru ca noi a schimbat structura fisierului HTML
-inainte era: 
-	div
-		ul
-			li
- acum e:
-	div
-		ul
-			li
-				a
-*/
-
 .main-menu ul li:nth-child(6) a {
 	color: #fe5a1a;
 }
@@ -89,52 +77,6 @@ inainte era:
 	align-items: center;
 }
 
-.icons ul li i {
-	/*Codu ista nu face nimic */
-	/* padding-bottom: 0px;
-    padding-top: 0px; */
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 20px;
-    height: 100%;
-    display: flex;
-	align-items: center;
-	/*Codu ista nu face nimic */
-    /* margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px; */
-   }
-
-.icons ul {
-	display: flex;
-	flex-direction: row; 
-}
-
-.icons ul li i  {
-	font-weight: bold;
-    color: #fe5a1a;
-}
-
-.icons ul li {
-	list-style: none;
-}
-
-.icons ul li a {
-	text-decoration: none;
-}
-
-/* In 'best practices in css' se recomanda sa ordonezi clasele in descrestere,
-de exemplu:
-
-.icons {
-	padding-right: 58px;
-    margin-left: auto;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .icons ul {
 	display: flex;
 	flex-direction: row; 
@@ -144,13 +86,6 @@ de exemplu:
 	list-style: none;
 }
 
-.icons ul li a {
-	text-decoration: none;
-}
-
-Clasele de mai jos sunt aceleasi, 
-trebuie sa faci din doua una.
-
 .icons ul li i {
     padding-left: 18px;
     padding-right: 18px;
@@ -158,16 +93,19 @@ trebuie sa faci din doua una.
     height: 100%;
     display: flex;
 	align-items: center;
-   }
-
-.icons ul li i  {
 	font-weight: bold;
     color: #fe5a1a;
-} */
+   }
 
-/* icoanele nu sunt pe aceeasi linie cu textul meniul
-indiciu foloseste padding sau margin */
+.icons ul li a {
+	text-decoration: none;
+}
 
-/* Te las sa gasesti cum sa schimbi culoarea la ultima icoana */
-
-/*Si printre altele, ai facut treaba buna ;)*/
+.icons ul li:nth-child(1) a i {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+	}
