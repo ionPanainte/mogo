@@ -5,12 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>exerciutiu</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-	<!-- Linkul de mai jos este pentru imaginea shopping cart -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:700" rel="stylesheet">
 </head>
 <body> 
 	<div class="main-container">
@@ -32,9 +31,6 @@
 	        <li><a href="#"><i class="fa" >&#xf002;</i></a></li>
 	        <li><a href="#"><i class="fa">&#xf2c0;</i></a></li>
 			<li><a href="#"><i class="fa">&#xf08a;</i></a></li>
-			<!-- Am gasit imagine pe acest site https://www.w3schools.com/icons/tryit.asp?filename=trybs_ref_glyph_shopping-cart 
-			am copiat numele clasei de mai jos dar nu a mers, apoi m-am uitat mai atent la linkurile care se gasesc in <head>
-				si am observat ca acolo era un link pe care nu-l avem. -->
 			<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
 	        <li><a href="#"><i class="fa">&#xf013;</i></a></li>
 	    </ul>
@@ -42,7 +38,72 @@
 	</div>
 	<!-- de aici in jos se incepe sliderul -->
 	<div class='main-header'>
-		<img src="./images/slide-05_1920x.jpg" alt="boxa">
+		<div class="slideshow-container">
+			<div class="slides">	
+				<img src="./images/slide-01_1920x.jpg" alt="boxa">
+				<div class="slide-content">
+					<h1>Speaker Bottle $190</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">	
+				<img src="./images/slide-02_1920x.jpg" alt="boxa">
+				<div class="slide-content">
+					<h1>Smart Watches $150</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">	
+				<img src="./images/slide-03_1920x.jpg" alt="boxa">
+				<div class="slide-content">
+					<h1>Power Bank $350</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">	
+				<img src="./images/slide-slice_1920x.png" alt="boxa">
+				<div class="slide-content">
+					<h1>Tracker $410</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">	
+				<img src="./images/slide-05_1920x.jpg" alt="boxa">
+				<div class="slide-content">
+					<h1>Wireless Speaker $490</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">	
+				<img src="./images/slide-06_1920x.jpg" alt="boxa">
+				<div class="slide-content">
+					<h1>Headphone $210</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit volup...</p>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div class="slides">
+				<video src="./videos/video.mp4" autoplay></video>
+			</div>
+			<br>
+			<div class="container-dots">
+				<div>
+					<span class="dot" onclick="currentSlide(0)"></span> 
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+					<span class="dot" onclick="currentSlide(4)"></span> 
+					<span class="dot" onclick="currentSlide(5)"></span> 
+					<span class="dot" onclick="currentSlide(6)"></span>  
+				</div>
+			</div>
+		</div>	
 	</div>
+	<script src="./scripts/slidershow.js"></script>
 </body>
 </html>
