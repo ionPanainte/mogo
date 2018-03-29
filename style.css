@@ -1,4 +1,4 @@
-* {
+ * {
 	margin: 0;
 	padding: 0;
 }
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.logo {
+.main-container .logo {
 	background-color: #fe5a1a;
 	width: 250px;
 	display: flex;
@@ -23,11 +23,11 @@
 
 }
 
-.logo img {
+.main-container .logo img {
 	width: 130px;
 }
 
-.main-menu ul {
+.main-container .main-menu ul {
 	height: 80px;
 	display: flex;
 	flex-direction: row;
@@ -35,7 +35,7 @@
 	padding-left: 20px;
 }
 
-.main-menu ul li { 
+.main-container .main-menu ul li { 
 	list-style: none;
 	padding-left: 15px;
     padding-right: 15px;
@@ -48,20 +48,20 @@
     display: flex;
     align-items: center;
 }
-.main-menu ul li i {
+.main-container .main-menu ul li i {
 	font-weight: bold;
 }
 
-.main-menu ul li:nth-child(6) a {
+.main-container .main-menu ul li:nth-child(6) a {
 	color: #fe5a1a;
 }
 
-.main-menu ul li a {
+.main-container .main-menu ul li a {
 	color: #777;
 	text-decoration: none;
 }
 
-.main-menu ul li span  {
+.main-container .main-menu ul li span  {
 	position: absolute;
 	margin-top: -15px;
     background: #fc2a2e;
@@ -72,7 +72,7 @@
     font-weight: bold;
 }
 
-.icons {
+.main-container .icons {
 	padding-right: 58px;
     margin-left: auto;
     display: flex;
@@ -80,32 +80,74 @@
 	align-items: center;
 }
 
-.icons ul li i {
-	padding-bottom: 0px;
-    padding-top: 0px;
+.main-container .icons ul {
+	display: flex;
+	flex-direction: row; 
+}
+
+.main-container .icons ul li {
+	list-style: none;
+}
+
+.main-container .icons ul li i {
     padding-left: 18px;
     padding-right: 18px;
     font-size: 20px;
     height: 100%;
     display: flex;
 	align-items: center;
-   }
-
-.icons ul {
-	display: flex;
-	flex-direction: row; 
-	padding-top: 10px;
-}
-
-.icons ul li i  {
 	font-weight: bold;
     color: #fe5a1a;
-}
+   }
 
-.icons ul li {
-	list-style: none;
-}
-
-.icons ul li a {
+.main-container .icons ul li a {
 	text-decoration: none;
+}
+
+.main-container .icons ul li:nth-child(1) a i {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+	}
+
+
+.main-container .icons ul li:nth-child(5) a i{
+	color: #777;
+}
+
+
+.main-container .dropdown-home {
+position: relative;
+display: inline-block;
+
+}
+
+.main-container .dropdown-home-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 80px;
+    left: -30px;
+    width: 280px;
+    padding: 40px;
+}
+
+.main-container .dropdown-home-content a {
+	 color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.main-container .dropdown-home:hover .dropdown-home-content {
+    display: block;
 }
