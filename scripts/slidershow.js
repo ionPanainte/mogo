@@ -1,6 +1,8 @@
 var slideIndex = 0;
+var contentIndex = 0;
 var timer = 4000;
 showSlides();
+moveContent();
 
 function currentSlide(n) {
     var i;
@@ -13,7 +15,7 @@ function currentSlide(n) {
     }
 
     for (let i = 0; i < slideContent.length; i++) {
-        slideContent[i].className.replace(" slide-content-animated", "");
+        slideContent[i].className.replace("slide-content slide-content-animated", "slide-content");
         slideContent[i].style.display = "block";
     }
 
@@ -61,7 +63,8 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     if (slideIndex === slides.length) { vid.play(); timer = 8000 }
-    setTimeout(animateSlider, timer); 
+    setTimeout(moveContent, timer)
+    setTimeout(animateSlider, timer);
     setTimeout(showSlides, timer * 2); 
     timer = 4000;
 }
@@ -86,5 +89,33 @@ function animateSlider() {
     }
     
     slides[slideIndex].style.display = "block";
+    
 }
 
+
+function moveContent() {
+    var moveDiv = document.getElementsByClassName('movediv');
+    var slides = document.getElementsByClassName("slides");
+
+    contentIndex++;
+    if (contentIndex > moveDiv.length) {contentIndex = 0}    
+    if (moveDiv[contentIndex-1] === undefined ) {
+        
+    } else {
+        slides[contentIndex-1].onmousemove = function (e) {
+            var x = e.pageX,
+                y = e.pageY;
+
+            for (let i = 0; i < moveDiv.length; i++) {
+                moveDiv[i].style.transform = '';
+            }
+
+            if (moveDiv[contentIndex-1] === undefined ) {
+            
+            } else {
+                moveDiv[contentIndex-1].style.transform = 'matrix(1, 0, 0, 1,'+ (-x/50) + ',' + (y/50) +')';
+                moveDiv[contentIndex-1].style.transition = 'transform 2s';
+            }
+    }
+    };
+}
