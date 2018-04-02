@@ -113,7 +113,7 @@ function moveContent() {
             if (moveDiv[contentIndex-1] === undefined ) {
             
             } else {
-                moveDiv[contentIndex-1].style.transform = 'matrix(1, 0, 0, 1,'+ (-x/50) + ',' + (y/50) +')';
+                moveDiv[contentIndex-1].style.transform = 'matrix(1, 0, 0, 1,'+ (-x/30) + ',' + (y/30) +')';
                 moveDiv[contentIndex-1].style.transition = 'transform 2s';
             }
     }
