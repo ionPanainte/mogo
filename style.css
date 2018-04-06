@@ -118,6 +118,26 @@
 	color: #777;
 }
 
+/* .dropdown-loghin {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-loghin-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: rgb(5, 5, 22);
+    top: -30px;
+    left: 12px;
+    width: 20px;
+} */
+
+.dropdown-loghin:hover .dropdown-loghin-content {
+    display: block;
+}
+
 .main-header{
     /*position:;*/
     height: 80vh;
@@ -329,14 +349,17 @@ padding-top: 0px;
     left: 0;
     background-color: #f1f1f1;
     top: -35px;
-    left: 210px;
-    width: 270px;
+    left: 150px;
+    width: 220px;
 }
 
 .dropdown-Blog-variants:hover .dropdown-Blog-variants-content {
     display: block;
 }
 
+.dropdown-Blog-variants-content > ul {
+    list-style: none;
+}
 
 .dropdown-Article-variants {
     position: relative;
@@ -344,16 +367,75 @@ padding-top: 0px;
 }
 
 .dropdown-Article-variants-content {
+    list-style: none;
     position: absolute;
     display: none;
     left: 0;
     background-color: #f1f1f1;
     top: -35px;
-    left: 210px;
-    width: 270px;
-    z-index: 11;
+    left: 150px;
+    width: 220px;
+    z-index: 19;
 }
 
 .dropdown-Article-variants:hover .dropdown-Article-variants-content {
+    display: block;
+}
+
+.dropdown-Gallery-variants {
+    position: relative;
+}
+
+.dropdown-Gallery-variants-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+    z-index: 15;
+}
+
+.dropdown-Gallery-variants:hover .dropdown-Gallery-variants-content {
+    display: block;
+}
+
+.dropdown-Other-pages {
+    position: relative;
+}
+
+.dropdown-Other-pages-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -3px;
+    left: 150px;
+    width: 220px;
+}
+
+.dropdown-Other-pagess:hover .dropdown-Other-pages-content {
+    display: block;
+}
+
+.dropdown-Documentation-variants {
+    position: relative;
+}
+
+.dropdown-Documentation-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+}
+
+.dropdown-Documentation:hover .dropdown-Documentation-content {
     display: block;
 }
