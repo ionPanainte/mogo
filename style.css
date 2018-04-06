@@ -121,7 +121,7 @@
 }
 
 .main-header{
-    /* position:; */
+    /*position:;*/
     height: 80vh;
     width: 100vw;
 }
@@ -223,6 +223,7 @@ display: inline-block;
 
 .main-container .dropdown-features-content {
     display: none;
+    text-decoration: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -237,15 +238,20 @@ display: inline-block;
 
 .main-container .dropdown-features-container {
     display: inline-block;
+    list-style: none;
+}
+
+.main-container .dropdown-features-content i {
+    position: absolute;
 }
 
 .main-container .dropdown-features-content a {
-     color: black;
+    list-style: none;
+    color: black;
     padding: 5px 16px;
-    text-decoration: none;
     display: block;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-left: 10px;
 }
 
@@ -267,53 +273,89 @@ padding-top: 0px;
 .dropdown-collection-content {
     position: absolute;
     display: none;
-    margin-left: 200px;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 250px;
 }
 
 .dropdown-collection:hover .dropdown-collection-content {
     display: block;
 }
 
-/* .main-container .dropdown-Collectionpage-content ul { */
-    /* .dropdown-Collectionpage-content  aceasta clasa nu a fost definita in html*/
 
-.main-container   .dropdown-collection-page {
-    /* z-index: 999; */
-    /* width: 100vw;
-    height: 11px;
-    display: none; */
- /* position: relative;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 80px;
-    left: -22px;
-    width: 250px;
-    padding: 40px;
-    padding-top: 35px;*/
+.dropdown-Productpage {
+    position: relative;
 }
 
-/* .main-container .dropdown-Collectionpage a {
-     color: black;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-} */
-
-/* .main-container .dropdown-Collectionpage:hover .dropdown-Collectionpage-content ul div li {
-    display: block;
-
-} */
-
-/* .main-container .dropdown-Collectionpage{
+.dropdown-Productpage-content {
     position: absolute;
-    display: inline-block;
-
-} */
-
-/* .main-container .dropdown-Collectionpage-content div {
     display: none;
-} */
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 250px;
+}
+
+.dropdown-Productpage:hover .dropdown-Productpage-content {
+    display: block;
+}
+
+.dropdown-Product-options {
+    position: relative;
+}
+
+.dropdown-Product-options-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 270px;
+}
+
+.dropdown-Product-options:hover .dropdown-Product-options-content {
+    display: block;
+}
+
+.dropdown-Blog-variants {
+    position: relative;
+}
+
+.dropdown-Blog-variants-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 270px;
+}
+
+.dropdown-Blog-variants:hover .dropdown-Blog-variants-content {
+    display: block;
+}
+
+
+.dropdown-Article-variants {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-Article-variants-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 270px;
+    z-index: 11;
+}
+
+.dropdown-Article-variants:hover .dropdown-Article-variants-content {
+    display: block;
+}
