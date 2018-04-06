@@ -156,21 +156,39 @@
 		<div class="icons">
 		    <ul>
 				<li><a href="#"><i class="fa" >&#xf002;</i></a></li>
-				<li class="dropdown-loghin">
-							<a href="#"><i onclick="myFunction()" class="fa">&#xf2c0; </i></a>	
-					<div class="dropdown-loghin-content">
+				<li class="dropdown-login">
+					<a href="#"><i onclick="myFunction('login')" class="fa">&#xf2c0; </i></a>	
+					<div id="login" class="dropdown-login-content">
 						<ul>
 							<li><a href="">Checkout</a></li>
 							<li><a href="">Sign In</a></li>
 							<li><a href="">Create Account</a></li>
 						</ul>
-							
 					</div>
 				</li>
-		        
 				<li><a href="#"><i class="fa">&#xf08a;</i></a></li>
-				<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
-		        <li><a href="#"><i class="fa">&#xf013;</i></a></li>
+				<li>
+					<a href="#"><i class="glyphicon glyphicon-shopping-cart" onclick="myFunction('cart')"></i></a>
+					<!-- mai jos trebuie de schimbat numele classei -->
+					<div id="cart" class="dropdown-login-content">
+							<ul>
+								<li><a href="">Checkout</a></li>
+								<li><a href="">Sign In</a></li>
+								<li><a href="">Create Account</a></li>
+							</ul>
+						</div>
+				</li>
+		        <li>
+					<a href="#"><i class="fa" onclick="myFunction('settings')" >&#xf013;</i></a>
+					<!-- mai jos trebuie de schimbat numele classei -->
+					<div id="settings" class="dropdown-login-content">
+							<ul>
+								<li><a href="">Checkout</a></li>
+								<li><a href="">Sign In</a></li>
+								<li><a href="">Create Account</a></li>
+							</ul>
+						</div>
+				</li>
 		    </ul>
 		</div>
 	</div>
@@ -254,5 +272,6 @@
 		</div>	
 	</div>
 	<script src="./scripts/slidershow.js"></script>
+	<script src="./scripts/showModal.js"></script>
 </body>
 </html>
