@@ -81,18 +81,18 @@
 	align-items: center;
 }
 
-.main-container .icons ul {
+.main-container .icons > ul {
     padding-top: 10px;
 
 	display: flex;
 	flex-direction: row; 
 }
 
-.main-container .icons ul li {
+.main-container .icons > ul > li {
 	list-style: none;
 }
 
-.main-container .icons ul li i {
+.main-container .icons > ul > li > a > i {
     padding-left: 18px;
     padding-right: 18px;
     font-size: 20px;
@@ -103,11 +103,11 @@
     color: #fe5a1a;
    }
 
-.main-container .icons ul li a {
+.main-container .icons ul > li > a {
 	text-decoration: none;
 }
 
-.main-container .icons ul li:nth-child(1) a i {
+.main-container .icons > ul > li:nth-child(1) > a > i {
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -116,12 +116,36 @@
         -ms-filter: "FlipH";
 	}
 
-.main-container .icons ul li:nth-child(5) a i{
+.main-container .icons ul > li:nth-child(5) > a > i{
 	color: #777;
 }
 
+.dropdown-login {
+    position: relative;
+    display: inline-block;
+} 
+
+.dropdown-login-content {
+    position: absolute;
+    display: none;
+    right: 0;
+    background-color: #f1f1f1;
+    /* top: -30px; */
+    width: 200px;
+}
+
+.dropdown-login-content > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* .dropdown-login:hover .dropdown-login-content {
+    display: block;
+} */
+
 .main-header{
-    /* position:; */
+    /*position:;*/
     height: 80vh;
     width: 100vw;
 }
@@ -223,6 +247,7 @@ display: inline-block;
 
 .main-container .dropdown-features-content {
     display: none;
+    text-decoration: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -237,15 +262,20 @@ display: inline-block;
 
 .main-container .dropdown-features-container {
     display: inline-block;
+    list-style: none;
+}
+
+.main-container .dropdown-features-content i {
+    position: absolute;
 }
 
 .main-container .dropdown-features-content a {
-     color: black;
+    list-style: none;
+    color: black;
     padding: 5px 16px;
-    text-decoration: none;
     display: block;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-left: 10px;
 }
 
@@ -267,53 +297,151 @@ padding-top: 0px;
 .dropdown-collection-content {
     position: absolute;
     display: none;
-    margin-left: 200px;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 250px;
 }
 
 .dropdown-collection:hover .dropdown-collection-content {
     display: block;
 }
 
-/* .main-container .dropdown-Collectionpage-content ul { */
-    /* .dropdown-Collectionpage-content  aceasta clasa nu a fost definita in html*/
 
-.main-container   .dropdown-collection-page {
-    /* z-index: 999; */
-    /* width: 100vw;
-    height: 11px;
-    display: none; */
- /* position: relative;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 80px;
-    left: -22px;
-    width: 250px;
-    padding: 40px;
-    padding-top: 35px;*/
+.dropdown-Productpage {
+    position: relative;
 }
 
-/* .main-container .dropdown-Collectionpage a {
-     color: black;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-} */
-
-/* .main-container .dropdown-Collectionpage:hover .dropdown-Collectionpage-content ul div li {
-    display: block;
-
-} */
-
-/* .main-container .dropdown-Collectionpage{
+.dropdown-Productpage-content {
     position: absolute;
-    display: inline-block;
-
-} */
-
-/* .main-container .dropdown-Collectionpage-content div {
     display: none;
-} */
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 250px;
+}
+
+.dropdown-Productpage:hover .dropdown-Productpage-content {
+    display: block;
+}
+
+.dropdown-Product-options {
+    position: relative;
+}
+
+.dropdown-Product-options-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 210px;
+    width: 270px;
+}
+
+.dropdown-Product-options:hover .dropdown-Product-options-content {
+    display: block;
+}
+
+.dropdown-Blog-variants {
+    position: relative;
+}
+
+.dropdown-Blog-variants-content {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+}
+
+.dropdown-Blog-variants:hover .dropdown-Blog-variants-content {
+    display: block;
+}
+
+.dropdown-Blog-variants-content > ul {
+    list-style: none;
+}
+
+.dropdown-Article-variants {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-Article-variants-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+    z-index: 19;
+}
+
+.dropdown-Article-variants:hover .dropdown-Article-variants-content {
+    display: block;
+}
+
+.dropdown-Gallery-variants {
+    position: relative;
+}
+
+.dropdown-Gallery-variants-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+    z-index: 15;
+}
+
+.dropdown-Gallery-variants:hover .dropdown-Gallery-variants-content {
+    display: block;
+}
+
+.dropdown-Other-pages {
+    position: relative;
+}
+
+.dropdown-Other-pages-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -3px;
+    left: 150px;
+    width: 220px;
+}
+
+.dropdown-Other-pages:hover .dropdown-Other-pages-content {
+    display: block;
+}
+
+.dropdown-Documentation-variants {
+    position: relative;
+}
+
+.dropdown-Documentation-content {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: #f1f1f1;
+    top: -35px;
+    left: 150px;
+    width: 220px;
+}
+
+.dropdown-Documentation:hover .dropdown-Documentation-content {
+    display: block;
+}
