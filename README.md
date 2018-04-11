@@ -10,3 +10,6 @@
 #Ca sa te schimbi pe alta ramura
 
 ##git checkout numeleramurei
+
+#Creezi o nua ramura
+## git chackout -b numele ramurei
