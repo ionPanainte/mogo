@@ -1,0 +1,66 @@
+.main-products {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 200vh;
+}
+
+.main-products_left-container {
+    /* display: flex;
+    flex-direction: column; */
+    width: 65vw;
+    background: tomato;
+}
+
+.main-products_left-container--top {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-products--watches {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.main-products--watches-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 101%;
+    min-height: 100%;
+}
+
+.main-products--trackers {
+    position: relative;
+    width: 50%;
+
+}
+
+.main-products--trackers-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 101%;
+    min-height: 100%;
+}
+
+.main-products--headphones {
+    position: relative;
+    
+}
+
+.main-products--headphones-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 101%;
+    min-height: 100%;
+}
