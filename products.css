@@ -3,14 +3,12 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 200vh;
 }
 
 .main-products_left-container {
     /* display: flex;
     flex-direction: column; */
     width: 65vw;
-    background: tomato;
 }
 
 .main-products_left-container--top {
@@ -21,7 +19,7 @@
 .main-products--watches {
     position: relative;
     width: 50%;
-    height: auto;
+    height: 315px;
 }
 
 .main-products--watches-image {
@@ -37,6 +35,7 @@
 .main-products--trackers {
     position: relative;
     width: 50%;
+    height: 315px;
 
 }
 
@@ -52,6 +51,7 @@
 
 .main-products--headphones {
     position: relative;
+    margin-top: -20px;
     
 }
 
@@ -63,4 +63,19 @@
     right: 0;
     width: 101%;
     min-height: 100%;
+}
+
+.main-products--earphones {
+    position: relative;
+    width: 35vw;
+}
+
+.main-products--earphones-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 101%; 
+    height: 139%;
 }
