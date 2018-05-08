@@ -1,81 +1,70 @@
 .main-products {
-    margin-top: 150px;
     display: flex;
     flex-direction: row;
     width: 100vw;
+    position: relative;
+    z-index: 998;
 }
 
 .main-products_left-container {
-    /* display: flex;
-    flex-direction: column; */
     width: 65vw;
 }
 
 .main-products_left-container--top {
     display: flex;
     flex-direction: row;
+    height: auto;
+    /* margin-top: 50px; */
 }
 
 .main-products--watches {
-    position: relative;
     width: 50%;
-    height: 315px;
+    /* height: 50%; */
 }
 
 .main-products--watches-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 101%;
+    width: 105%;
     min-height: 100%;
+    transition: left ease-in-out  2s;
+    height: auto;
+}
+
+.main-products--watches:hover .main-products--watches-image  {
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    left: 0 !important;
+    /* right: 1px; */
+    transition: left ease-in-out 2s;
 }
 
 .main-products--trackers {
-    position: relative;
     width: 50%;
-    height: 315px;
+    /* height: 50%; */
 
 }
 
 .main-products--trackers-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 101%;
     min-height: 100%;
+    height: auto;
 }
 
 .main-products--headphones {
-    position: relative;
-    margin-top: -20px;
-    
+    height: 40vh;
 }
 
 .main-products--headphones-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 101%;
     min-height: 100%;
 }
 
 .main-products--earphones {
-    position: relative;
     width: 35vw;
+    height: 630px;
 }
 
 .main-products--earphones-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 101%; 
-    height: 139%;
+    height: auto;
 }

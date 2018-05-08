@@ -1,15 +1,15 @@
 
-#Descarca codul de pe alta ramura
+# Descarca codul de pe alta ramura
 
-##git pull origin numeleramurei
+## git pull origin numeleramurei
 
-#Pentru a vedea pe care ramura esti
+# Pentru a vedea pe care ramura esti
 
-##git branch
+## git branch
 
-#Ca sa te schimbi pe alta ramura
+# Ca sa te schimbi pe alta ramura
 
-##git checkout numeleramurei
+## git checkout numeleramurei
 
-#Creezi o nua ramura
-## git chackout -b numele ramurei
+# reezi o nua ramura
+## git checkout -b numele ramurei
