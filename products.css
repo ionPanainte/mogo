@@ -20,51 +20,308 @@
 .main-products--watches {
     width: 50%;
     /* height: 50%; */
+    position: relative;
 }
 
 .main-products--watches-image {
     width: 105%;
     min-height: 100%;
-    transition: left ease-in-out  2s;
     height: auto;
+    position: relative;
+    transition: left 1s;
+    left: -5%;
+    z-index: -1;
 }
 
 .main-products--watches:hover .main-products--watches-image  {
-    /* position: absolute;
-    top: 0;
-    bottom: 0; */
-    left: 0 !important;
-    /* right: 1px; */
-    transition: left ease-in-out 2s;
+    left: 0%;
+    transition: left 1s;
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
+}
+.main-products--watches:hover .main-products--watches-title  {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.main-products--watches:hover .main-products--watches-body  {
+    display: block;
+    animation: fadeInUp .5s both;
+}
+
+.main-products--watches-title {
+    position: absolute;
+    top: 20px;
+    bottom: auto;
+    left: 20px;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.main-products--watches-title h1 {
+    font-weight: 800;
+}
+
+.main-products--watches-body {
+    position: absolute;
+    top: 35%;
+    bottom: auto;
+    left: 25%;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    display: none;
+}
+
+
+.main-products--watches-body h1 {
+    font-weight: 800;
+
 }
 
 .main-products--trackers {
     width: 50%;
     /* height: 50%; */
-
+    overflow: hidden;
+    position: relative;
 }
 
 .main-products--trackers-image {
-    width: 101%;
+    width: 105%;
     min-height: 100%;
     height: auto;
+    position: relative;
+    transition: left 1s;
+    left: -5%;
+    z-index: -1;
 }
+
+
+
+.main-products--trackers:hover .main-products--trackers-image  {
+    left: 0%;
+    transition: left 1s;
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
+}
+.main-products--trackers:hover .main-products--trackers-title  {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.main-products--trackers:hover .main-products--trackers-body  {
+    display: block;
+    animation: fadeInUp .5s both;
+}
+
+.main-products--trackers-title {
+    position: absolute;
+    top: 20px;
+    bottom: auto;
+    left: 20px;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
+    color: #fff;
+}
+
+.main-products--trackers-title h1 {
+    font-weight: 800;
+}
+
+.main-products--trackers-body {
+    position: absolute;
+    top: 35%;
+    bottom: auto;
+    left: 25%;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    display: none;
+    color: #fff;
+}
+
+
+.main-products--trackers-body h1 {
+    font-weight: 800;
+
+}
+
 
 .main-products--headphones {
     height: 40vh;
+    position: relative;
 }
 
 .main-products--headphones-image {
-    width: 101%;
+    width: 105%;
     min-height: 100%;
+    position: relative;
+    transition: left 1s;
+    left: -5%;
+    z-index: -1;
 }
+
+.main-products--headphones:hover .main-products--headphones-image  {
+    left: 0%;
+    transition: left 1s;
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
+}
+.main-products--headphones:hover .main-products--headphones-title  {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.main-products--headphones:hover .main-products--headphones-body  {
+    display: block;
+    animation: fadeInUp .5s both;
+}
+
+.main-products--headphones-title {
+    position: absolute;
+    top: 20px;
+    bottom: auto;
+    left: 20px;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
+    color: #fff;
+}
+
+.main-products--headphones-title h1 {
+    font-weight: 800;
+}
+
+.main-products--headphones-body {
+    position: absolute;
+    top: 35%;
+    bottom: auto;
+    left: 35%;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    display: none;
+    color: #fff;
+}
+
+
+.main-products--headphones-body h1 {
+    font-weight: 800;
+
+}
+
+
+
 
 .main-products--earphones {
     width: 35vw;
     height: 630px;
+    overflow: hidden;
+    position: relative;
 }
 
+
 .main-products--earphones-image {
-    width: 101%; 
+    width: 105%; 
     height: auto;
+    position: relative;
+    transition: left 1s;
+    left: -5%;
+    z-index: -1;
 }
+
+.main-products--earphones:hover .main-products--earphones-image  {
+    left: 0%;
+    transition: left 1s;
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
+}
+.main-products--earphones:hover .main-products--earphones-title  {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.main-products--earphones:hover .main-products--earphones-body  {
+    display: block;
+    animation: fadeInUp .5s both;
+}
+
+.main-products--earphones-title {
+    position: absolute;
+    top: 20px;
+    bottom: auto;
+    left: 20px;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
+    color: #fff;
+}
+
+.main-products--earphones-title h1 {
+    font-weight: 800;
+}
+
+.main-products--earphones-body {
+    position: absolute;
+    top: 35%;
+    bottom: auto;
+    left: 25%;
+    right: auto;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    display: none;
+    color: #fff;
+}
+
+
+.main-products--earphones-body h1 {
+    font-weight: 800;
+
+}
+
+
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  
